@@ -61,7 +61,28 @@
                     <use href="#switch-star" width="4px" height="4px" />
                 </g>
             </g>
+            <g class="switch__handle" transform="translate(12,12)">
+                <g class="switch__handle-side">
+                    <circle r="8" fill="url(#switch-sun1)" />
+                    <circle r="6.5" fill="url(#switch-sun2)" />
+                </g>
+                <g class="switch__handle-side" opacity="0">
+                    <circle r="8" fill="url(#switch-moon1)" />
+                    <circle r="6.5" fill="url(#switch-moon2)" />
+                    <clipPath id="switch-moon-clip">
+                        <circle class="switch__moon-hole" r="1.5" cx="-6" cy="2" />
+                        <circle class="switch__moon-hole" r="1.5" cx="-1" cy="3" />
+                        <circle class="switch__moon-hole" r="2" cx="-1" cy="8" />
+                        <circle class="switch__moon-hole" r="1" cx="2" cy="0" />
+                        <circle class="switch__moon-hole" r="5" cx="8" cy="6" />
+                    </clipPath>
+                    <circle r="8" fill="url(#switch-moon3)" clip-path="url(#switch-moon-clip)"/>
+                </g>
+            </g>  
         </svg>
     </label>
+    <div>
+        
+    </div>
 </body>
 </html>
